@@ -1,0 +1,34 @@
+$kind: http-request
+description: |-
+  curl -X POST "[https://api.groq.com/openai/v1/chat/completions](https://api.groq.com/openai/v1/chat/completions)"  
+  \-H "Authorization: Bearer $GROQ_API_KEY"  
+  \-H "Content-Type: application/json"  
+  \-d '{"messages": \[{"role": "user", "content": "Explain the importance of fast language models"}\], "model": "llama-3.3-70b-versatile"}'
+url: POST https://api.groq.com/openai/v1/chat/completions?key={{groq_api_key_0jrr}}
+method: POST
+headers:
+  Authorization: "{{bearer_token_0w7x}}"
+  Content-Type: application/json
+queryParams:
+  key: "{{groq_api_key_0jrr}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"messages\": [\r
+
+    \        {\r
+
+    \            \"role\": \"user\",\r
+
+    \            \"content\": \"Explain the importance of fast language models\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"model\": \"openai/gpt-oss-20b\"\r
+
+    }"
+settings: {}
+order: 1000

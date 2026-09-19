@@ -1,0 +1,8 @@
+workspace:
+  id: 5da8323c-b9f5-45e8-8330-396b93f9740d
+cloudResources:
+  collections:
+    ../postman/collections/Research Assistance: 44362365-2282c0a7-4509-488b-a5f2-b13fe27868a7
+    ../postman/collections/Job_assistant: 44362365-34822dec-3116-427b-a045-b98ddfcbeb4b
+    ../postman/collections/Groq API: 44362365-0d12fc37-ea13-408e-a966-d3eea9447ab6
+    ../postman/collections/New Collection: 44362365-4491502a-0a9b-4614-a831-404fea7a21ee
