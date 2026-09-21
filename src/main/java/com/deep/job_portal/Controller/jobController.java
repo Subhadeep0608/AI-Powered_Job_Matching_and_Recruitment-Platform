@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -33,6 +34,7 @@ public class jobController {
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('RECRUITER')")
     @ResponseStatus(HttpStatus.CREATED)
     public JobResponse addJob(
             @Valid @RequestBody CreateJobRequest request,

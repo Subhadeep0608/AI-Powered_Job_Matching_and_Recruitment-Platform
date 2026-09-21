@@ -56,7 +56,7 @@ public class JobService {
 
         RecruiterProfile recruiter = recruiterProfileRepository.findByUserUsername(username)
                 .orElseThrow(() -> new ResponseStatusException(
-                        HttpStatus.NOT_FOUND, "Recruiter profile not found"));
+                        HttpStatus.FORBIDDEN, "Register a company before adding jobs"));
         Company company = companyRepository.findById(request.companyId())
                 .orElseThrow(() -> new ResponseStatusException(
                         HttpStatus.NOT_FOUND, "Company not found"));

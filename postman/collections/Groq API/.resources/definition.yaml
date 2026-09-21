@@ -1,7 +1,0 @@
-$kind: collection
-description: ""
-variables:
-  - key: bearer_token_0w7x
-    secret: true
-  - key: groq_api_key_0jrr
-    secret: true
